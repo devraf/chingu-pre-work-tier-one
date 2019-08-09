@@ -46,7 +46,6 @@ body {
     height: 75vh;
     text-align: center;
     line-height: 1.25;
-    display: none;
 }
 
 .title {
@@ -65,40 +64,27 @@ body {
 
 .about {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(15rem, 17rem));
-    grid-column-gap: 1.5rem;
-    margin: 1.5rem 0;
     place-content: center;
 }
 
-.card {
+.about-section-top {
     display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 15rem 4rem 1fr;
-    max-width: 17rem;
-    min-width: 15rem;
-    font-size: .9rem;
-    background: hsla(200, 100%, 85%, 1);
-    margin: 0 0 1.5rem 0;
+    grid-template-columns: repeat(3, 1fr);
+    place-items: center;
+    grid-column-gap: 1.5rem;
+    margin: 1.5rem;
 }
 
-.img-small {
-    width: 17rem;
-    min-width: 15rem;
-    height: 15rem;
-    object-fit: cover;
+.about-section-bottom {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    place-items: baseline;
+    grid-column-gap: 1.5rem;
+    margin: 1.5rem;
 }
 
-.card-title {
-    margin: 1rem .75rem;
-    line-height: 1.15;
-}
-
-.card-text {
-    margin: 0 .75rem;
-}
-
-.card-button {
+.btn {
     margin: 1rem auto;
     padding: 1rem;
     background: hsla(200, 100%, 100%, 1);
@@ -111,7 +97,46 @@ body {
     transition: .3s;
 }
 
-.card-button:hover {
+.btn:hover {
     background: hsla(200, 100%, 98%, 1);
     transition: .3s;
+}
+
+.card-medium {
+    display: grid;
+    grid-template-columns: minmax(15rem, 23rem);
+    max-width: 23rem;
+    font-size: 1rem;
+    background: hsla(200, 100%, 85%, 1);
+}
+
+.card-medium-image {
+    width: 100%;
+    height: 10rem;
+    object-fit: cover;
+}
+
+.card-title {
+    font-family: 'Crimson Text', serif;
+    font-size: 1.4rem;
+    margin: .75rem 0 0 1.5rem;
+    color: hsla(200, 100%, 10%, 1);
+}
+
+.card-text {
+    margin: .25rem 1.5rem .75rem 1.5rem;
+}
+
+.card-large {
+    display: grid;
+    grid-template-columns: minmax(23rem, 35rem);
+    max-width: 35rem;
+    font-size: 1rem;
+    background: hsla(200, 100%, 85%, 1);
+}
+
+.card-large-image {
+    width: 100%;
+    height: 13rem;
+    object-fit: cover;
 }
