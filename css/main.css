@@ -1,12 +1,13 @@
 * {
     padding: 0;
     margin: 0;
+    border-collapse: inherit;
 }
 
 body {
     font-family: 'Open Sans', sans-serif;
     /* font-family: 'Crimson Text', serif; */
-    color: hsla(200, 100%, 10%, .75);
+    color: hsla(200, 100%, 10%, .85);
     font-size: 62.5%;
     font-weight: 400;
     line-height: 1.5;
@@ -62,7 +63,8 @@ body {
 }
 
 
-.about {
+.about,
+.services {
     display: grid;
     place-content: center;
 }
@@ -70,7 +72,6 @@ body {
 .about-section-top {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    place-items: center;
     grid-column-gap: 1.5rem;
     margin: 1.5rem;
 }
@@ -78,13 +79,47 @@ body {
 .about-section-bottom {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: auto;
-    place-items: baseline;
     grid-column-gap: 1.5rem;
     margin: 1.5rem;
 }
 
+.services-parallax {
+    width: 99vw;
+    height: 20rem;
+    text-align: center;
+    background: linear-gradient(hsla(200, 100%, 10%, .6), hsla(200, 100%, 10%, .6)), no-repeat bottom/cover url('/images/6.jpg');
+    display: grid;
+    place-content: center;
+    margin: 1.5rem 0;
+}
+
+.title-secondary {
+    font-size: 3rem;
+    letter-spacing: .1rem;
+}
+
+.subtitle-secondary {
+    max-width: 50rem;
+}
+
+.services-section-top {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 1.5rem;
+    margin: 1.5rem auto;
+}
+
+.services-section-bottom {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 1.5rem;
+    place-items: center;
+}
+
 .btn {
+    height: 4rem;
+    width: 10rem;
+    place-self: end;
     margin: 1rem auto;
     padding: 1rem;
     background: hsla(200, 100%, 100%, 1);
@@ -94,17 +129,67 @@ body {
     font-size: 1.2rem;
     max-width: 10rem;
     text-align: center;
-    transition: .3s;
+    transition: .2s;
 }
 
 .btn:hover {
     background: hsla(200, 100%, 98%, 1);
-    transition: .3s;
+    transition: .2s;
+}
+
+.btn-success {
+    background: hsla(115, 100%, 25%, 1);
+    border: none;
+    color: hsla(200, 100%, 100%, .8);
+}
+
+.btn-success:hover {
+    background: hsla(115, 100%, 25%, .8);
+}
+
+.btn-details {
+    background: hsla(225, 100%, 25%, 1);
+    border: none;
+    color: hsla(200, 100%, 100%, .8);
+}
+
+.btn-details:hover {
+    background: hsla(225, 100%, 25%, .8);
+}
+
+.btn-warning {
+    background: hsla(0, 100%, 25%, 1);
+    border: none;
+    color: hsla(200, 100%, 100%, .8);
+}
+
+.btn-warning:hover {
+    background: hsla(0, 100%, 25%, .8);
+}
+
+.card-small {
+    display: grid;
+    grid-template-columns: minmax(15rem, 16.75rem);
+    grid-template-rows: min-content min-content min-content auto;
+    max-width: 16.75rem;
+    font-size: 1rem;
+    background: hsla(200, 100%, 85%, 1);
+}
+
+.card-small-image {
+    width: 100%;
+    height: 16.75rem;
+    object-fit: cover;
+}
+
+.card-title-center {
+    text-align: center;
 }
 
 .card-medium {
     display: grid;
     grid-template-columns: minmax(15rem, 23rem);
+    grid-template-rows: min-content min-content min-content auto;
     max-width: 23rem;
     font-size: 1rem;
     background: hsla(200, 100%, 85%, 1);
@@ -120,7 +205,7 @@ body {
     font-family: 'Crimson Text', serif;
     font-size: 1.4rem;
     margin: .75rem 0 0 1.5rem;
-    color: hsla(200, 100%, 10%, 1);
+    color: hsla(200, 100%, 5%, 1);
 }
 
 .card-text {
@@ -130,13 +215,29 @@ body {
 .card-large {
     display: grid;
     grid-template-columns: minmax(23rem, 35rem);
+    grid-template-rows: min-content min-content min-content auto;
     max-width: 35rem;
     font-size: 1rem;
     background: hsla(200, 100%, 85%, 1);
+
 }
 
 .card-large-image {
     width: 100%;
     height: 13rem;
+    object-fit: cover;
+}
+
+.card-max {
+    display: grid;
+    grid-template-columns: minmax(34rem, 71.5rem);
+    max-width: 71.5rem;
+    font-size: 1rem;
+    background: hsla(200, 100%, 85%, 1);
+}
+
+.card-max-image {
+    width: 100%;
+    height: 26rem;
     object-fit: cover;
 }
