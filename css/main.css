@@ -42,11 +42,16 @@ body {
 .hero {
     display: grid;
     place-content: center;
-    background: linear-gradient(hsla(200, 100%, 10%, .6), hsla(200, 100%, 10%, .6)),
+    background:
         url("/images/james-donovan-kFHz9Xh3PPU-unsplash1.jpg") no-repeat center/cover;
     height: 75vh;
     text-align: center;
     line-height: 1.25;
+}
+
+.text-container {
+    background: hsla(200, 100%, 10%, .9);
+    padding: 2rem;
 }
 
 .title {
@@ -87,7 +92,7 @@ body {
     width: 99vw;
     height: 20rem;
     text-align: center;
-    background: linear-gradient(hsla(200, 100%, 10%, .6), hsla(200, 100%, 10%, .6)), no-repeat bottom/cover url('/images/6.jpg');
+    background: no-repeat bottom/cover url('/images/6.jpg');
     display: grid;
     place-content: center;
     margin: 1.5rem 0;
