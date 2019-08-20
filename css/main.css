@@ -105,7 +105,8 @@ a {
 .parallax {
   width: 99vw;
   height: 20rem;
-  background: bottom/cover no-repeat url('/images/6.jpg');
+  background: top/cover no-repeat url('/images/6.jpg');
+  /* background-attachment: fixed; */
   display: grid;
   place-content: center;
 }
@@ -140,13 +141,14 @@ a {
 
 .contact {
   scroll-behavior: smooth;
+  height: 35rem;
   background: linear-gradient(
       hsla(200, 100%, 10%, 0.75),
       hsla(200, 100%, 10%, 0.75)
     ),
     no-repeat top/cover url('/images/12.jpg');
+  /* background-attachment: fixed; */
   margin: 2rem 0 0 0;
-  /* height: 40rem; */
 }
 
 .contact-form {
