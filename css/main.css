@@ -256,6 +256,10 @@ textarea {
   place-self: start;
 }
 
+.form-btn:hover {
+  background: hsla(200, 100%, 10%, 0.8);
+}
+
 .card-small {
   display: grid;
   grid-template-columns: minmax(15rem, 16.75rem);
