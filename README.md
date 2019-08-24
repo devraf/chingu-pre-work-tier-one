@@ -1,5 +1,17 @@
-Chingu pre-work requirement for Tier 1.
+#Conquer Template Clone
 
-[Conquer Template Clone](https://happy-mahavira-45e987.netlify.com/)
+##Overview
 
-Clone of the Conquer theme template made with HTML, CSS, vanilla JS.
+This cloned template of the Conquer theme was created for the tier one Chingu pre-work requirement.
+
+[Conquer Template Clone Live Link](https://happy-mahavira-45e987.netlify.com/)
+
+##Features
+
+- Parallax effect with vanilla JS
+- Smooth scrolling
+- Sticky navbar
+
+#Dependencies
+
+No dependencies were used in this project.

@@ -2,6 +2,7 @@
   padding: 0;
   margin: 0;
   border-collapse: inherit;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -27,6 +28,7 @@ body {
   font-size: 1.2rem;
   line-height: 1.25;
   background-color: hsla(200, 100%, 10%, 1);
+  z-index: 2;
 }
 
 .nav-link {
@@ -136,15 +138,15 @@ a {
 }
 
 .contact {
-  scroll-behavior: smooth;
-  height: 35rem;
   background: linear-gradient(
       hsla(200, 100%, 10%, 0.75),
       hsla(200, 100%, 10%, 0.75)
     ),
     no-repeat top/cover url('/images/12.jpg');
-  /* background-attachment: fixed; */
-  margin: 2rem 0 0 0;
+  display: grid;
+  place-content: center;
+  margin: 5rem 0;
+  padding: 12rem 0;
 }
 
 .contact-form {
@@ -155,7 +157,6 @@ a {
   place-content: center;
   font-size: 1rem;
   text-align: center;
-  padding: 4rem 0;
 }
 
 .form-title {
@@ -163,7 +164,6 @@ a {
   font-family: 'Crimson Text', serif;
   font-size: 2rem;
   color: hsla(0, 100%, 100%, 1);
-  letter-spacing: 0.01;
 }
 
 .form-description {
