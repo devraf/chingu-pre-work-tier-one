@@ -1,17 +1,18 @@
-#Conquer Template Clone
+# **Conquer Template Clone**
 
-##Overview
+
+## Overview
 
 This cloned template of the Conquer theme was created for the tier one Chingu pre-work requirement.
 
 [Conquer Template Clone Live Link](https://happy-mahavira-45e987.netlify.com/)
 
-##Features
+## Features
 
 - Parallax effect with vanilla JS
 - Smooth scrolling
 - Sticky navbar
 
-#Dependencies
+## Dependencies
 
 No dependencies were used in this project.
