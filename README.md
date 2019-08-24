@@ -13,6 +13,10 @@ This cloned template of the Conquer theme was created for the tier one Chingu pr
 - Smooth scrolling
 - Sticky navbar
 
+## Running the project
+
+Clone or download repo.
+
 ## Dependencies
 
 No dependencies were used in this project.
